@@ -20,7 +20,7 @@ void setup() {
     Image[][] data = MNISTLoader.loadDataWrapper(dataPath("mnist dataset"));
     trainingData = data[0];
     testData = data[1];
-    nn = new NeuralNetwork(new int[]{trainingData[0].numRows(), 200, 200, 10});
+    nn = new NeuralNetwork(new int[]{trainingData[0].numRows(), 200, 10});
     button0 = new Button(10, 10, 100, 50, color(0), "train");
     button1 = new Button(button0.x() + button0.width() + 10, 10, button0.width(), button0.height(), color(0), "guess");
     button2 = new Button(button1.x() + button1.width() + 10, 10, button1.width(), button1.height(), color(0), "clear");
